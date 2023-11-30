@@ -1,5 +1,7 @@
 package com.aboykov.countries.common
-
+/**
+ * Stores all the constants used in the app
+ */
 object Constants {
     const val BASE_URL: String = "https://gist.githubusercontent.com/"
     const val COUNTRIES_JSON_FILE_PATH =

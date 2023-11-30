@@ -8,7 +8,13 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
-
+/**
+ * GetCountriesUseCase is a class that is used to get a list
+ * of countries from the repository.It implements following flow:
+ * 1. Loading state
+ * 2. Success state
+ * And handles HttpException and IOException and could be extended to handle other errors.
+ **/
 class GetCountriesUseCase(
     private val repository: CountriesRepository
 ) {

@@ -8,13 +8,15 @@ import com.aboykov.countries.domain.repository.CountriesRepository
 import com.aboykov.countries.domain.use_case.GetCountriesUseCase
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-
+/**
+ * CountriesAppModule is a file that defines objects for manual dependency injection.
+ * and provides a single source of truth for the dependencies.
+ */
 interface CountriesAppModule {
     val countriesApi: CountriesApi
     val countriesRepository: CountriesRepository
     val getCountriesUseCase: GetCountriesUseCase
 }
-
 class CountriesAppModuleImpl(
     private val appContext: Context
 ) : CountriesAppModule {

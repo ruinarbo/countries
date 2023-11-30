@@ -2,7 +2,9 @@ package com.aboykov.countries.presentation.countries_list
 
 import androidx.recyclerview.widget.DiffUtil
 import com.aboykov.countries.domain.model.Country
-
+/**
+ * DiffUtil callback for countries list
+ */
 class CountryDiffCallback(
     private val oldList: List<Country>,
     private val newList: List<Country>

@@ -9,7 +9,9 @@ import com.aboykov.countries.domain.model.Country
 import com.aboykov.countries.domain.use_case.GetCountriesUseCase
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-
+/**
+ * ViewModel for countries list handling 3 states: loading, success and error
+ */
 class CountriesListViewModel(
     private val getCountriesUseCase: GetCountriesUseCase
 ) : ViewModel() {

@@ -10,7 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.aboykov.countries.CountriesApplication
 import com.aboykov.countries.R
 import com.aboykov.countries.presentation.viewModelFactory
-
+/**
+ * Fragment to display list of countries. Since UI for Error and Loading
+ * is not defined, Toast is used to display error and loading messages.
+ */
 class CountriesListFragment : Fragment(R.layout.fragment_countries_list) {
 
     private lateinit var countriesListViewModel: CountriesListViewModel
@@ -43,7 +46,7 @@ class CountriesListFragment : Fragment(R.layout.fragment_countries_list) {
             )
         }
         countriesListViewModel.error.observe(viewLifecycleOwner) { error ->
-            Toast.makeText(requireContext(), error, Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show()
         }
         countriesListViewModel.loading.observe(viewLifecycleOwner) { loading ->
             if (loading) {

@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.aboykov.countries.R
 import com.aboykov.countries.domain.model.Country
-
+/**
+ * Adapter for countries list used in [CountriesListFragment]
+ * CountryDiffCallback is used to update data in adapter
+ */
 class CountriesListAdapter(private var countries: List<Country>) :
     RecyclerView.Adapter<CountriesListAdapter.CountryViewHolder>() {
 
