@@ -1,8 +1,6 @@
 # Countries Application
 
-![Main Screen](https://imgur.com/a/F81aGXy)
-
-# Application Overview:
+Application Overview:
 
 * The application fetches a list of countries from a remote server using the provided URL.
 * The list of countries is displayed in a RecyclerView, with each item showing information such as the country's name, region, code, and capital.
